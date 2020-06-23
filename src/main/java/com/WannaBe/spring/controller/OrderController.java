@@ -24,7 +24,7 @@ public class OrderController {
          return customerRepository.save(req.getCustomer());
     }
 
-    @GetMapping("findAllOrders")
+    @GetMapping("/findAllOrders")
     public List<Customer> findAllOrders(){
         return customerRepository.findAll();
     }
